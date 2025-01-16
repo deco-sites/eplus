@@ -44,7 +44,9 @@
       "__resolveType": "website/loaders/pages.ts"
     },
     {
-      "__resolveType": "website/loaders/redirects.ts"
+      "__resolveType": "website/loaders/redirectsFromCsv.ts",
+      "redirects": [],
+      "from": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSyVUH8UtlwGKY0iGLjh5KqRaqJh8JL8F3asA8L5aNkgbVSqx7l4jGbONQXDOfgXcpSLy1Kp9E-vUSa/pub?gid=1525565502&single=true&output=csv"
     }
   ],
   "caching": {
@@ -53,16 +55,19 @@
   "commerce": {
     "platform": "other"
   },
-  "platform": "shopify",
+  "platform": "vtex",
   "__resolveType": "site/apps/site.ts",
   "firstByteThresholdMS": false,
   "abTesting": {
     "replaces": [],
     "includeScriptsToHead": {
       "includes": []
+    },
+    "includeScriptsToBody": {
+      "includes": []
     }
   },
   "flavor": {
-    "framework": "htmx"
+    "framework": "fresh"
   }
 }
